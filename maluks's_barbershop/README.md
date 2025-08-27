@@ -21,3 +21,26 @@ Final – 5 September
 Sheykin, H. (2025) What 5 Metrics Drive Barber Shop Success? (Read more at: https://finmodelslab.com/blogs/kpi-metrics/barber-shop), Finmodelslab. Available at: https://finmodelslab.com/blogs/kpi-metrics/barber-shop#:~:text=Uncover%20strategies%20on%20monitoring%2 
 
 <img width="931" height="387" alt="Screenshot 2025-08-27 154746" src="https://github.com/user-attachments/assets/475e38d0-940b-4d9b-be3d-a2275c883027" />
+
+Gantt chart
+
+section Part 1: Planning & Research
+Examine Social Account : August 8,
+Establish Objectives : August 9,
+Complete Branding & Style Guide : August 10,
+Draft Low-Fidelity Wireframes : August 10,
+Milestone 1 : done, August 12,
+
+section Week 2: Design & Content
+Design Website Grid Layout : August 13,
+Create Story Highlight Covers : August 13,
+Source & Create Graphics : August 14,
+Milestone 2 : done, August 17,
+
+section Week 3: Testing & Launch
+Final making of the files and content : August 21,
+Make Revisions : August 23,
+Schedule Content & Launch : Aug 25, 
+Part one Submission : August 26, 
+Part Two Submission : August 27, 
+Final Submission : September 28 
