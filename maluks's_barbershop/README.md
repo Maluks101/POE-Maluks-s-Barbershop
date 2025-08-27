@@ -19,3 +19,5 @@ Review – 30 August
 Final – 5 September
 # 7. REFERENCES
 Sheykin, H. (2025) What 5 Metrics Drive Barber Shop Success? (Read more at: https://finmodelslab.com/blogs/kpi-metrics/barber-shop), Finmodelslab. Available at: https://finmodelslab.com/blogs/kpi-metrics/barber-shop#:~:text=Uncover%20strategies%20on%20monitoring%2 
+
+<img width="931" height="387" alt="Screenshot 2025-08-27 154746" src="https://github.com/user-attachments/assets/475e38d0-940b-4d9b-be3d-a2275c883027" />
