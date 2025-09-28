@@ -6,9 +6,41 @@ Tiro Maluleke
 # 3. PROJECT OVERVIEW
 This projects is a website for Maluks's Barbershop, offering customers a more convenient way to get a haircut.
 # 4. WEBSITE GOALS AND OBJECTIVES
-The goals and objectives are to provide customers an easy way to find pricing and book an appointment
+Goals
+•	Generate new clientele (1)
+•	Streamline the booking process (2)
+•	Build trust and credibility for the barbershop (3)
+
+Objectives
+•	Produce a high quality website that showcases the hair styles, prices and provide high quality images for the barbershop. (1)
+•	Provide an easy booking system by using a google form for all bookings. (2)
+•	Showcase images of the barbershop and the hairstyles and provide customer testimonials. (3)
+
 # 5. KEY FEATURES AND FUNCTIONALITY
-Booking system, summary of services, pricing
+Homepage
+•	Logo
+•	Top Level Navigation – For users to navigate between all the pages of the website
+•	Mission Statement
+•	Images of the barbershop experience
+
+About us
+•	Top level navigation
+•	Logo
+•	Images of the barbershop
+•	Short description of the barbershop experience
+
+Contact page
+•	Top level navigation
+•	Logo
+•	Contact information (Email, phone number, address)
+•	Booking form (Google form) – For users to book an appointment
+
+Products page
+•	Logo
+•	Top level navigation
+•	Images of Hairstyles
+•	Pricing of Hairstyles
+
 # 6. TIMELINE AND MILESTONES
 Complete wireframe design – 17 august 
 
@@ -18,7 +50,10 @@ Review – 30 August
 
 Final – 5 September
 # 7. REFERENCES
-Sheykin, H. (2025) What 5 Metrics Drive Barber Shop Success? (Read more at: https://finmodelslab.com/blogs/kpi-metrics/barber-shop), Finmodelslab. Available at: https://finmodelslab.com/blogs/kpi-metrics/barber-shop#:~:text=Uncover%20strategies%20on%20monitoring%2 
+Sheykin, H. (2025) What 5 Metrics Drive Barber Shop Success? (Read more at: https://finmodelslab.com/blogs/kpi-metrics/barber-shop), Finmodelslab. Available at: https://finmodelslab.com/blogs/kpi-metrics/barber-shop#:~:text=Uncover%20strategies%20on%20monitoring%2
+forGeeks, G. (2025) How to Link a CSS to HTML?, GeeksforGeeks. Available at: https://www.geeksforgeeks.org/html/how-to-link-a-css-file-to-html/ (Accessed: 2025). 
+Kolade, C. (2022) How to Link CSS to HTML – Stylesheet File Linking, FreeCodeCamp. Available at: https://www.freecodecamp.org/news/how-to-link-css-to-html/ (Accessed: 2025). 
+Schools, W. (2025) HTML Responsive Web Design, W3Schools. Available at: https://www.w3schools.com/html/html_responsive.asp (Accessed: 2025). 
 
 <img width="931" height="387" alt="Screenshot 2025-08-27 154746" src="https://github.com/user-attachments/assets/475e38d0-940b-4d9b-be3d-a2275c883027" />
 
@@ -57,14 +92,10 @@ Final Submission : September 28
 
 ## 27 August 2025:
 
-### Improved Code Structure:
-- Improved the format and structure of the HTML, examples:
+Improved Code Structure:
+Improved the format and structure of the HTML, examples:
 
 
 28 August 2025:
-- Added CSS styling.
-- Added responsive design.
-- Added media query.
-
-# Pictures of the web page
-
+Added CSS styling.
+Added responsive design.
