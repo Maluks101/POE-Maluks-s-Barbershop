@@ -22,7 +22,7 @@ Sheykin, H. (2025) What 5 Metrics Drive Barber Shop Success? (Read more at: http
 
 <img width="931" height="387" alt="Screenshot 2025-08-27 154746" src="https://github.com/user-attachments/assets/475e38d0-940b-4d9b-be3d-a2275c883027" />
 
-Gantt chart
+# 8. Gantt chart
 
 section Part 1: Planning & Research
 Examine Social Account : August 8,
@@ -44,3 +44,23 @@ Schedule Content & Launch : Aug 25,
 Part one Submission : August 26, 
 Part Two Submission : August 27, 
 Final Submission : September 28 
+
+# 9. Changelog
+
+26 August 2025:
+
+Improved word document:
+Added more detailed and objective goals.
+Improved the KPI metrics to better suit the business.
+Improved the web page functionality and features that better suit the website, such as top level navigation.
+Improved the research by adding in more images and text.
+
+27 August 2025:
+
+Improved Code Structure:
+Improved the format and structure of the HTML, examples:
+
+
+28 August 2025:
+Added CSS styling.
+Added responsive design.

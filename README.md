@@ -1,2 +1,0 @@
-# POE Maluks's Barbershop
-
