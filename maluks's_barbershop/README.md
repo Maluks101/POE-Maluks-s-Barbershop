@@ -47,20 +47,24 @@ Final Submission : September 28
 
 # 9. Changelog
 
-26 August 2025:
+## 26 August 2025:
 
-Improved word document:
-Added more detailed and objective goals.
-Improved the KPI metrics to better suit the business.
-Improved the web page functionality and features that better suit the website, such as top level navigation.
-Improved the research by adding in more images and text.
+### Improved word document:
+- Added more detailed and objective goals.
+- Improved the KPI metrics to better suit the business.
+- Improved the web page functionality and features that better suit the website, such as top level navigation.
+- Improved the research by adding in more images and text.
 
-27 August 2025:
+## 27 August 2025:
 
-Improved Code Structure:
-Improved the format and structure of the HTML, examples:
+### Improved Code Structure:
+- Improved the format and structure of the HTML, examples:
 
 
 28 August 2025:
-Added CSS styling.
-Added responsive design.
+- Added CSS styling.
+- Added responsive design.
+- Added media query.
+
+# Pictures of the web page
+
