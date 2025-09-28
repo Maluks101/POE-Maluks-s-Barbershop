@@ -89,12 +89,27 @@ Final Submission : September 28
 
 ### Improved Code Structure:
 - Improved the format and structure of the HTML, examples:
-
+<img width="1169" height="755" alt="Screenshot 2025-09-28 155021" src="https://github.com/user-attachments/assets/c5584d61-5895-46ca-a534-c9cf6efc0d3b" />
+<img width="1157" height="753" alt="Screenshot 2025-09-28 155043" src="https://github.com/user-attachments/assets/89d9be84-6e57-4426-9c11-3eb5ff667813" />
 
 ## 28 August 2025:
 - Added CSS styling.
 - Added responsive design.
 - Added media query.
+<img width="1018" height="760" alt="Screenshot 2025-09-28 155744" src="https://github.com/user-attachments/assets/31be81f1-04cd-4ddc-bb3c-73ca27d196be" />
+<img width="881" height="733" alt="Screenshot 2025-09-28 155828" src="https://github.com/user-attachments/assets/3b7497da-9e01-4807-b19c-ce884eab8a93" />
+
+# Images of website
+<img width="1893" height="878" alt="Screenshot 2025-09-28 225536" src="https://github.com/user-attachments/assets/3d6190f8-7c92-4743-a7ae-067a5b139983" />
+<img width="739" height="917" alt="Screenshot 2025-09-28 225436" src="https://github.com/user-attachments/assets/7f940b61-1785-489e-b553-ce4b54b9605d" />
+<img width="736" height="898" alt="Screenshot 2025-09-28 225358" src="https://github.com/user-attachments/assets/92c8f21a-377b-46dd-a442-0f610120cf50" />
+<img width="1902" height="862" alt="Screenshot 2025-09-28 225513" src="https://github.com/user-attachments/assets/326c6f2d-40b6-4f94-ba24-bc55203113d7" />
+
+
+
+
+
+
 
 
 
