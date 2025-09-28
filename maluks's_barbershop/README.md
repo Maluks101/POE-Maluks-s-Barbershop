@@ -6,9 +6,41 @@ Tiro Maluleke
 # 3. PROJECT OVERVIEW
 This projects is a website for Maluks's Barbershop, offering customers a more convenient way to get a haircut.
 # 4. WEBSITE GOALS AND OBJECTIVES
-The goals and objectives are to provide customers an easy way to find pricing and book an appointment
+Goals
+•	Generate new clientele (1)
+•	Streamline the booking process (2)
+•	Build trust and credibility for the barbershop (3)
+
+Objectives
+•	Produce a high quality website that showcases the hair styles, prices and provide high quality images for the barbershop. (1)
+•	Provide an easy booking system by using a google form for all bookings. (2)
+•	Showcase images of the barbershop and the hairstyles and provide customer testimonials. (3)
+
 # 5. KEY FEATURES AND FUNCTIONALITY
-Booking system, summary of services, pricing
+Homepage
+•	Logo
+•	Top Level Navigation – For users to navigate between all the pages of the website
+•	Mission Statement
+•	Images of the barbershop experience
+
+About us
+•	Top level navigation
+•	Logo
+•	Images of the barbershop
+•	Short description of the barbershop experience
+
+Contact page
+•	Top level navigation
+•	Logo
+•	Contact information (Email, phone number, address)
+•	Booking form (Google form) – For users to book an appointment
+
+Products page
+•	Logo
+•	Top level navigation
+•	Images of Hairstyles
+•	Pricing of Hairstyles
+
 # 6. TIMELINE AND MILESTONES
 Complete wireframe design – 17 august 
 
