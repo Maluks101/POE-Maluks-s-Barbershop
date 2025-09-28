@@ -59,8 +59,12 @@ Improved the research by adding in more images and text.
 
 Improved Code Structure:
 Improved the format and structure of the HTML, examples:
-
+<img width="1169" height="755" alt="Screenshot 2025-09-28 155021" src="https://github.com/user-attachments/assets/4cfdc572-8140-4160-aed4-457ac0ff0639" />
+<img width="1157" height="753" alt="Screenshot 2025-09-28 155043" src="https://github.com/user-attachments/assets/f88a6310-7903-4c8b-9312-a11a50a7fae4" />
 
 28 August 2025:
 Added CSS styling.
 Added responsive design.
+<img width="1018" height="760" alt="Screenshot 2025-09-28 155744" src="https://github.com/user-attachments/assets/b330fb4b-1adb-4ea8-a205-c77fd23de74a" />
+<img width="881" height="733" alt="Screenshot 2025-09-28 155828" src="https://github.com/user-attachments/assets/830475a7-5b6b-4f1e-8be8-2022a821d7f7" />
+
