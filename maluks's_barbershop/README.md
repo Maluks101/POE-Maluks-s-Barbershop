@@ -48,12 +48,7 @@ Development – 27 August
 
 Review – 30 August 
 
-Final – 5 September
-# 7. REFERENCES
-Sheykin, H. (2025) What 5 Metrics Drive Barber Shop Success? (Read more at: https://finmodelslab.com/blogs/kpi-metrics/barber-shop), Finmodelslab. Available at: https://finmodelslab.com/blogs/kpi-metrics/barber-shop#:~:text=Uncover%20strategies%20on%20monitoring%2
-forGeeks, G. (2025) How to Link a CSS to HTML?, GeeksforGeeks. Available at: https://www.geeksforgeeks.org/html/how-to-link-a-css-file-to-html/ (Accessed: 2025). 
-Kolade, C. (2022) How to Link CSS to HTML – Stylesheet File Linking, FreeCodeCamp. Available at: https://www.freecodecamp.org/news/how-to-link-css-to-html/ (Accessed: 2025). 
-Schools, W. (2025) HTML Responsive Web Design, W3Schools. Available at: https://www.w3schools.com/html/html_responsive.asp (Accessed: 2025). 
+Final – 5 September 
 
 <img width="931" height="387" alt="Screenshot 2025-08-27 154746" src="https://github.com/user-attachments/assets/475e38d0-940b-4d9b-be3d-a2275c883027" />
 
@@ -92,10 +87,19 @@ Final Submission : September 28
 
 ## 27 August 2025:
 
-Improved Code Structure:
-Improved the format and structure of the HTML, examples:
+### Improved Code Structure:
+- Improved the format and structure of the HTML, examples:
 
 
-28 August 2025:
-Added CSS styling.
-Added responsive design.
+## 28 August 2025:
+- Added CSS styling.
+- Added responsive design.
+- Added media query.
+
+
+
+# REFERENCES
+Sheykin, H. (2025) What 5 Metrics Drive Barber Shop Success? (Read more at: https://finmodelslab.com/blogs/kpi-metrics/barber-shop), Finmodelslab. Available at: https://finmodelslab.com/blogs/kpi-metrics/barber-shop#:~:text=Uncover%20strategies%20on%20monitoring%2
+forGeeks, G. (2025) How to Link a CSS to HTML?, GeeksforGeeks. Available at: https://www.geeksforgeeks.org/html/how-to-link-a-css-file-to-html/ (Accessed: 2025). 
+Kolade, C. (2022) How to Link CSS to HTML – Stylesheet File Linking, FreeCodeCamp. Available at: https://www.freecodecamp.org/news/how-to-link-css-to-html/ (Accessed: 2025). 
+Schools, W. (2025) HTML Responsive Web Design, W3Schools. Available at: https://www.w3schools.com/html/html_responsive.asp (Accessed: 2025).
