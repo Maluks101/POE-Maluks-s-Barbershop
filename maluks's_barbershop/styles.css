@@ -41,6 +41,7 @@ a:hover{
     padding-top: 10px;
     margin-top: 2px;
     padding-bottom: 50px;
+    width: 100%;
 }
 
 header {
@@ -125,7 +126,7 @@ h1{
 h2{
     font-size: 1.5em;
     font-weight: lighter;
-    margin: 0px;
+    margin: 0%;
     padding-left: 30px;
 }
 
@@ -145,4 +146,119 @@ p {
 .title {
     color: white;
     font-size: 2em;
+}
+
+@media only screen and (max-width: 960px) {
+    body {
+        width: 360px;
+    }
+
+    header {
+        height: 375px;
+    }
+
+    #topNav {
+        position: absolute;
+        width: 350px;
+        top: 50px;
+        right: 5px;
+    }
+
+    #topNav li {
+        display: block;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    #home {
+        padding-right: 20px;
+        width: 340px;
+    }
+
+    #footerBottom {
+        padding-left: 10px;
+    }
+
+    #form {
+        width: 320px;
+        padding-left: 30px;
+    }
+
+    h1 {
+        font-size: 1em;
+        padding-left: 15px;
+        padding-bottom: 7.5px;
+        margin: 0%;
+    }
+
+    h2{
+        font-size: 0.75em;
+        font-weight: lighter;
+        margin: 0%;
+        padding-left: 15px;
+    }
+
+    p {
+        font-size: 0.5em;
+        padding-left: 15px;
+    }
+
+    #heading1, #heading2, #heading3, #heading4 {
+        font-size: 1em;
+        padding-left: 15px;
+        padding-bottom: 7.5px;
+        margin: 0%;
+        padding-top: 15px;  
+    }
+
+    .title {
+        color: white;
+        font-size: 1em;
+    }
+
+    #points {
+        font-size: 0.5em;
+        padding-left: 25px;
+    }
+
+    #logo {
+        width: 25px;
+        height:25px;
+        border-radius: 50px;
+        padding-left: 20px; 
+    }
+
+    #topNav li{
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 0.75em;
+    }
+
+    #homeBarb{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        padding-left: 225px;
+        top: 440px; 
+    }
+
+    .barb{
+        width: 90px;
+        height: 60px;
+        margin-right: 5px;
+        margin-top: 20px;
+        padding-left: 15px;
+    }
+
+    header {
+        padding-bottom: 1px;
+    }
+
+    #art1, #art2, #art3 {
+        margin-left: 25px;
+    }
+
+    .barb1 {
+        padding-left: 30px;
+    }
 }
