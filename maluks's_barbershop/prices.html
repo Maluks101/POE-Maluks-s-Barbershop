@@ -22,36 +22,103 @@
                 </nav>
             </header>
         
-            <main id="prices">
-<!-- Prices for all hair cuts -->
-                <h1 id="heading2">Prices for all styles</h1>
-                <article id="art1">
-                    <figcaption>Classic Men's Haircut - R250</figcaption>
-                    <img src="images/cut1.jpg" class="cut">
-                    <figcaption>Buzz Cut - R200</figcaption>
-                    <img src="images/cut2.jpg" class="cut">
-                </article>
-                <article id="art2">
-                    <figcaption>Scissor Cut - 280</figcaption>
-                    <img src="images/cut8.jpg" class="cut">
-                    <figcaption>Kids' Haircut (12 & under) - R120</figcaption>
-                    <img src="images/cut9.webp" class="cut">
-                </article>
-                <article id="art3">
-                    <figcaption>Beard Trim - R100</figcaption>
-                    <img src="images/cut7.webp" class="cut">
-                    <figcaption>Beard Trim + Line-Up - R120</figcaption>
-                    <img src="images/cut10.webp" class="cut">
-                </article>
-                <br class="break">
-            </main>
-        
-            <footer>
-                <p id="footerBottom">
-                    &copy; Maluks's Barbershop 2025 | Powered by "Ives Saint" Web Hosting 
-                </p>
-            </footer>
-    
+<main id="prices">
+      <h1 id="heading2">Prices for all styles</h1>
+
+      <!-- Search and Sort Controls -->
+      <div class="search-sort">
+        <input
+          type="text"
+          id="searchBar"
+          placeholder="Search haircut..."
+        />
+        <select id="sortSelect">
+          <option value="default">Sort by</option>
+          <option value="low-high">Price: Low to High</option>
+          <option value="high-low">Price: High to Low</option>
+        </select>
+      </div>
+
+      <!-- Prices Cards -->
+      <div class="prices-container" id="pricesContainer">
+        <div class="price-card" data-name="Classic Men's Haircut" data-price="250">
+          <img src="images/cut1.jpg" class="cut" alt="Classic Men's Haircut" />
+          <div class="service-name">Classic Men's Haircut</div>
+          <div class="price">R250</div>
+        </div>
+
+        <div class="price-card" data-name="Buzz Cut" data-price="200">
+          <img src="images/cut2.jpg" class="cut" alt="Buzz Cut" />
+          <div class="service-name">Buzz Cut</div>
+          <div class="price">R200</div>
+        </div>
+
+        <div class="price-card" data-name="Scissor Cut" data-price="280">
+          <img src="images/cut8.jpg" class="cut" alt="Scissor Cut" />
+          <div class="service-name">Scissor Cut</div>
+          <div class="price">R280</div>
+        </div>
+
+        <div class="price-card" data-name="Kids Haircut" data-price="120">
+          <img src="images/cut9.webp" class="cut" alt="Kids Haircut" />
+          <div class="service-name">Kids Haircut (12 & under)</div>
+          <div class="price">R120</div>
+        </div>
+
+        <div class="price-card" data-name="Beard Trim" data-price="100">
+          <img src="images/cut7.webp" class="cut" alt="Beard Trim" />
+          <div class="service-name">Beard Trim</div>
+          <div class="price">R100</div>
+        </div>
+
+        <div class="price-card" data-name="Beard Trim Line-Up" data-price="120">
+          <img src="images/cut10.webp" class="cut" alt="Beard Trim + Line-Up" />
+          <div class="service-name">Beard Trim + Line-Up</div>
+          <div class="price">R120</div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p id="footerBottom">
+        &copy; Maluks's Barbershop 2025 | Powered by "Ives Saint" Web Hosting
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    const searchBar = document.getElementById("searchBar");
+    const sortSelect = document.getElementById("sortSelect");
+    const container = document.getElementById("pricesContainer");
+    const cards = Array.from(container.getElementsByClassName("price-card"));
+
+    // 🔍 Filter functionality
+    searchBar.addEventListener("input", () => {
+      const term = searchBar.value.toLowerCase();
+      cards.forEach((card) => {
+        const name = card.dataset.name.toLowerCase();
+        card.style.display = name.includes(term) ? "block" : "none";
+      });
+    });
+
+    // 🔽 Sort functionality
+    sortSelect.addEventListener("change", () => {
+      const value = sortSelect.value;
+      let sortedCards = [...cards];
+
+      if (value === "low-high") {
+        sortedCards.sort((a, b) => a.dataset.price - b.dataset.price);
+      } else if (value === "high-low") {
+        sortedCards.sort((a, b) => b.dataset.price - a.dataset.price);
+      } else {
+        // default order (reset)
+        sortedCards = cards;
+      }
+
+      container.innerHTML = "";
+      sortedCards.forEach((card) => container.appendChild(card));
+    });
+  </script>
         </div>
     </body>
 </html>
