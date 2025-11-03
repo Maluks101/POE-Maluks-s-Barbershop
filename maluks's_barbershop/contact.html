@@ -8,128 +8,160 @@
     <meta name="keywords" content="Maluks Barbershop contact, book appointment, barber booking, haircut booking South Africa, beard trim booking, Maluks Barbershop phone, appointment form" />
     <meta name="author" content="Maluks Barbershop" />
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Leaflet CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <!-- Leaflet JS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
 </head>
-    <body>
-        <div id="group">
-<!--header containing all the links for the top level navigation-->
-            <header>
-                <img src="images/logo-1.jpg" id="logo">
-                <h class="title">Maluks Barbershop</h>
-<!-- Top level navigation -->
-                <nav id="topNav">
-                    <ul>
-                        <li><a href="index.html">Home page</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li class="activePage"><a>Contact</a></li>
-                        <li><a href="prices.html">Prices</a></li>
-                        <li><a href="enquiry.html">Enquiry</a></li>
-                    </ul>
-                </nav>
-            </header>
 
-            <main>
-                <h1 id="heading3">Book an appointment today!</h1>
+<body>
+    <div id="group">
+        <!--header containing all the links for the top level navigation-->
+        <header>
+            <img src="images/logo-1.jpg" id="logo" alt="Maluks Barbershop Logo">
+            <h class="title">Maluks Barbershop</h>
+            <!-- Top level navigation -->
+            <nav id="topNav">
+                <ul>
+                    <li><a href="index.html">Home page</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="activePage"><a>Contact</a></li>
+                    <li><a href="prices.html">Prices</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                </ul>
+            </nav>
+        </header>
 
-                <form id="contactForm">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your name" required>
-                    <div class="error" id="nameError"></div>
+        <main>
+            <h1 id="heading3">Book an appointment today!</h1>
 
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
-                    <div class="error" id="emailError"></div>
+            <form id="contactForm">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+                <div class="error" id="nameError"></div>
 
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="e.g., 0821234567" required>
-                    <div class="error" id="phoneError"></div>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                <div class="error" id="emailError"></div>
 
-                    <label for="date">Preferred Date</label>
-                    <input type="date" id="date" name="date" required>
-                    <div class="error" id="dateError"></div>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g., 0821234567" required>
+                <div class="error" id="phoneError"></div>
 
-                    <label for="time">Preferred Time</label>
-                    <input type="time" id="time" name="time" required>
-                    <div class="error" id="timeError"></div>
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date" required>
+                <div class="error" id="dateError"></div>
 
-                    <button type="submit">Send Request</button>
-                    <p class="success" id="successMsg"></p>
-                </form>
-            </main>
+                <label for="time">Preferred Time</label>
+                <input type="time" id="time" name="time" required>
+                <div class="error" id="timeError"></div>
 
-            <footer>
-                <p id="footerBottom">
-                    &copy; Maluks's Barbershop 2025 | Powered by "Ives Saint" Web Hosting 
-                </p>
-            </footer>
-        </div>
+                <button type="submit">Send Request</button>
+                <p class="success" id="successMsg"></p>
+            </form>
 
-        <script>
-            const form = document.getElementById('contactForm');
-            const successMsg = document.getElementById('successMsg');
+            <!-- Interactive Map Section -->
+            <section id="mapSection">
+                <h2>Find Us Here</h2>
+                <div id="map"></div>
+            </section>
+        </main>
 
-            form.addEventListener('submit', async (e) => {
-                e.preventDefault();
+        <footer>
+            <p id="footerBottom">
+                &copy; Maluks's Barbershop 2025 | Powered by "Ives Saint" Web Hosting 
+            </p>
+        </footer>
+    </div>
 
-                // Reset messages
-                document.querySelectorAll('.error').forEach(el => el.textContent = '');
-                successMsg.textContent = '';
-                successMsg.style.color = 'green';
+    <script>
+        // ---- Form Validation ----
+        const form = document.getElementById('contactForm');
+        const successMsg = document.getElementById('successMsg');
 
-                const name = form.name.value.trim();
-                const email = form.email.value.trim();
-                const phone = form.phone.value.trim();
-                const date = form.date.value;
-                const time = form.time.value;
-                let isValid = true;
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
 
-                // Validation rules
-                if (name.length < 2) {
-                    document.getElementById('nameError').textContent = 'Please enter a valid name.';
+            // Reset messages
+            document.querySelectorAll('.error').forEach(el => el.textContent = '');
+            successMsg.textContent = '';
+            successMsg.style.color = 'green';
+
+            const name = form.name.value.trim();
+            const email = form.email.value.trim();
+            const phone = form.phone.value.trim();
+            const date = form.date.value;
+            const time = form.time.value;
+            let isValid = true;
+
+            // Validation rules
+            if (name.length < 2) {
+                document.getElementById('nameError').textContent = 'Please enter a valid name.';
+                isValid = false;
+            }
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                document.getElementById('emailError').textContent = 'Please enter a valid email address.';
+                isValid = false;
+            }
+
+            const phoneRegex = /^\d{9,10}$/;
+            if (!phoneRegex.test(phone)) {
+                document.getElementById('phoneError').textContent = 'Please enter a valid phone number.';
+                isValid = false;
+            }
+
+            if (!date) {
+                document.getElementById('dateError').textContent = 'Please select a date.';
+                isValid = false;
+            } else {
+                const today = new Date().toISOString().split('T')[0];
+                if (date < today) {
+                    document.getElementById('dateError').textContent = 'Date cannot be in the past.';
                     isValid = false;
                 }
+            }
 
-                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if (!emailRegex.test(email)) {
-                    document.getElementById('emailError').textContent = 'Please enter a valid email address.';
-                    isValid = false;
-                }
+            if (!time) {
+                document.getElementById('timeError').textContent = 'Please select a time.';
+                isValid = false;
+            }
 
-                const phoneRegex = /^\d{9,10}$/;
-                if (!phoneRegex.test(phone)) {
-                    document.getElementById('phoneError').textContent = 'Please enter a valid phone number.';
-                    isValid = false;
-                }
+            if (!isValid) return;
 
-                if (!date) {
-                    document.getElementById('dateError').textContent = 'Please select a date.';
-                    isValid = false;
-                } else {
-                    const today = new Date().toISOString().split('T')[0];
-                    if (date < today) {
-                        document.getElementById('dateError').textContent = 'Date cannot be in the past.';
-                        isValid = false;
-                    }
-                }
+            //  Simulate sending data to server
+            successMsg.textContent = 'Thank you! Your appointment request has been sent successfully.';
+            form.reset();
 
-                if (!time) {
-                    document.getElementById('timeError').textContent = 'Please select a time.';
-                    isValid = false;
-                }
+            successMsg.style.opacity = '1';
+            setTimeout(() => {
+                successMsg.style.transition = 'opacity 1s';
+                successMsg.style.opacity = '0';
+            }, 4000);
+        });
 
-                if (!isValid) return;
+        // ---- Interactive Map ----
+        const map = L.map('map').setView([-26.2041, 28.0473], 14);
 
-                //  Simulate sending data to server
-                successMsg.textContent = 'Thank you! Your appointment request has been sent successfully.';
-                form.reset();
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            attribution:
+                '&copy; <a href="https://carto.com/">CartoDB</a> contributors, &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+        }).addTo(map);
 
-                successMsg.style.opacity = '1';
-                setTimeout(() => {
-                    successMsg.style.transition = 'opacity 1s';
-                    successMsg.style.opacity = '0';
-                }, 4000);
-            });
-        </script>
-        </div>
-    </body>
+        const marker = L.marker([-26.2041, 28.0473]).addTo(map);
+        marker.bindPopup("<b>Maluks Barbershop</b><br>123 Barber Street, Johannesburg<br>Open daily 8am–7pm").openPopup();
+
+        window.addEventListener("resize", () => {
+            map.invalidateSize();
+        });
+    </script>
+</body>
 </html>

@@ -574,3 +574,43 @@ input:focus, textarea:focus {
     font-size: 1.1rem;
     font-weight: 700;
 }
+/* --- Map Section Styling --- */
+#mapSection {
+  margin-top: 50px;
+  text-align: center;
+  background: #f9f9f9;
+  padding: 40px 10px;
+  border-top: 3px solid #1E73BE; /* blue accent */
+  border-radius: 12px;
+}
+
+#mapSection h2 {
+  font-size: 1.8rem;
+  color: #1E73BE;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Responsive Map Adjustments --- */
+@media (max-width: 768px) {
+  #map {
+    height: 300px;
+    width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  #map {
+    height: 250px;
+  }
+}
