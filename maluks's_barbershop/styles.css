@@ -7,7 +7,7 @@ body{
 }
 #topNav{
     position: absolute;
-    width: 500px;
+    width: 600px;
     top: 10px;
     right: 10px;
 }
@@ -303,7 +303,7 @@ p {
     }
 
     #points {
-        font-size: 0.5em;
+        font-size: 0.75em;
         padding-left: 25px;
     }
 
@@ -349,39 +349,39 @@ p {
     }
 }
 
-        form {
-            max-width: 500px;
-            margin: 40px auto;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
+form {
+    max-width: 500px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
 
-        input, textarea, button {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
+input, textarea, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
 
-        input:focus, textarea:focus {
-            border-color: #1E73BE;
-            outline: none;
-        }
+input:focus, textarea:focus {
+    border-color: #1E73BE;
+    outline: none;
+}
 
-        .error {
-            color: red;
-            font-size: 0.9em;
-        }
+.error {
+    color: red;
+    font-size: 0.9em;
+}
 
-        .success {
-            color: green;
-            text-align: center;
-        }
+.success {
+    color: green;
+    text-align: center;
+}
         /* ===== Main Content ===== */
 main {
     padding: 30px;
