@@ -147,18 +147,19 @@
                 successMsg.style.opacity = '0';
             }, 4000);
         });
+        const map = L.map('map').setView([-26.0215, 28.0106], 14); // Fourways, Johannesburg
 
-        // ---- Interactive Map ----
-        const map = L.map('map').setView([-26.2041, 28.0473], 14);
-
+        // Add dark styled tile layer
         L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
             attribution:
                 '&copy; <a href="https://carto.com/">CartoDB</a> contributors, &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
         }).addTo(map);
 
-        const marker = L.marker([-26.2041, 28.0473]).addTo(map);
-        marker.bindPopup("<b>Maluks Barbershop</b><br>123 Barber Street, Johannesburg<br>Open daily 8am–7pm").openPopup();
+        // Add marker for shop
+        const marker = L.marker([-26.0215, 28.0106]).addTo(map);
+        marker.bindPopup("<b>Maluks Barbershop</b><br>Fourways, Johannesburg<br>Open daily 8am–7pm").openPopup();
 
+        // Keep map responsive
         window.addEventListener("resize", () => {
             map.invalidateSize();
         });
