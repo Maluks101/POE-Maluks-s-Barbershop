@@ -119,16 +119,10 @@ Final Submission : September 28
 - Added Interactive Maps.
 - Added SEO on all the pages.
 - Added JavaScript functionality.
-
-
-
-
-
-
-
-
-
-
+<img width="1290" height="772" alt="Screenshot 2025-11-03 154447" src="https://github.com/user-attachments/assets/ed842267-890d-4348-aab5-afbe4aa74169" />
+<img width="1210" height="677" alt="Screenshot 2025-11-03 154518" src="https://github.com/user-attachments/assets/15977d6b-3698-4eac-99ad-a297fb80281a" />
+<img width="926" height="792" alt="Screenshot 2025-11-03 154540" src="https://github.com/user-attachments/assets/f85b2642-c49b-49bd-bbd5-796e0245572a" />
+<img width="1285" height="708" alt="Screenshot 2025-11-03 154620" src="https://github.com/user-attachments/assets/b3f6b530-4aa5-4c80-9b7a-8d9563b37689" />
 
 
 # REFERENCES
