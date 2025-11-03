@@ -31,66 +31,63 @@
             </header>
 <!-- Main contains majority of the pages content -->
             <main id="home">
-      <!-- Dynamic content will be injected here -->
-    </main>
+                <!-- Dynamic content will be loaded here -->
+            </main>
 
-    <footer>
-      <div id="footerImages"></div>
-      <p id="footerBottom">
-        &copy; Maluks's Barbershop 2025 | Powered by "Ives Saint" Web Hosting
-      </p>
-    </footer>
-  </div>
+            <footer>
+              <div id="footerImages"></div>
+              <p id="footerBottom">
+                &copy; Maluks's Barbershop 2025 | Powered by "Ives Saint" Web Hosting
+              </p>
+            </footer>
+            </div>
 
-  <script>
-    // --- Dynamic homepage content ---
-    const homeContent = {
-      title: "Maluks Barbershop",
-      subtitle: "The best place to get a cut",
-      heroImage: "images/barb1.jpg",
-      description:
-        "Maluks's Barbershop is the best destination for all your grooming and haircut needs. Step in for a fresh style, great atmosphere, and affordable prices.",
-      offerings: [
-        "Quality cuts",
-        "Affordable prices",
-        "Great cultural environment",
-        "Positive vibe",
-      ],
-      footerImages: [
-        "images/barb2.png",
-        "images/barb3.png",
-        "images/barb4.webp",
-      ],
-    };
+        <script>
+          // Home page dynamic content
+          const homeContent = {
+            title: "Maluks Barbershop",
+            subtitle: "The best place to get a cut",
+            heroImage: "images/barb1.jpg",
+            description:
+              "Maluks's Barbershop is the best destination for all your grooming and haircut needs. Step in for a fresh style, great atmosphere, and affordable prices.",
+            offerings: [
+              "Quality cuts",
+              "Affordable prices",
+              "Great cultural environment",
+              "Positive vibe",
+            ],
+            footerImages: [
+              "images/barb2.png",
+              "images/barb3.png",
+              "images/barb4.webp",
+            ],
+          };
 
-    // Get the main container
-    const homeSection = document.getElementById("home");
+          const homeSection = document.getElementById("home");
 
-    // Build the dynamic HTML content
-    const homeHTML = `
-      <h1>${homeContent.title}</h1>
-      <h2>${homeContent.subtitle}</h2>
-      <img src="${homeContent.heroImage}" id="homeBarb" alt="Barbershop Hero">
-      <p>${homeContent.description}</p>
-      <p>Our offering:</p>
-      <ul id="points">
-        ${homeContent.offerings.map((item) => `<li>${item}</li>`).join("")}
-      </ul>
-    `;
+          const homeHTML = `
+            <h1>${homeContent.title}</h1>
+            <h2>${homeContent.subtitle}</h2>
+            <img src="${homeContent.heroImage}" id="homeBarb" alt="Barbershop Hero">
+            <p>${homeContent.description}</p>
+            <p>Our offering:</p>
+            <ul id="points">
+              ${homeContent.offerings.map((item) => `<li>${item}</li>`).join("")}
+            </ul>
+          `;
 
-    // Inject content into the DOM
-    homeSection.innerHTML = homeHTML;
+          homeSection.innerHTML = homeHTML;
 
-    // Dynamically load footer images
-    const footerContainer = document.getElementById("footerImages");
-    homeContent.footerImages.forEach((src) => {
-      const img = document.createElement("img");
-      img.src = src;
-      img.classList.add("barb");
-      img.alt = "Barbershop style";
-      footerContainer.appendChild(img);
-    });
-  </script>
+          // Dynamically load footer images
+          const footerContainer = document.getElementById("footerImages");
+          homeContent.footerImages.forEach((src) => {
+            const img = document.createElement("img");
+            img.src = src;
+            img.classList.add("barb");
+            img.alt = "Barbershop style";
+            footerContainer.appendChild(img);
+          });
+        </script>
 
         </div>
     </body>

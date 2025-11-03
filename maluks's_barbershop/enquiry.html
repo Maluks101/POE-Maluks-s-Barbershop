@@ -104,7 +104,7 @@
       firstInvalidEl = firstInvalidEl || form.email;
     }
 
-    // ✅ Validate phone number: must be exactly 10 digits (e.g. 0821234567)
+    // Validate phone
     const phoneRegex = /^\d{10}$/;
     if (!phoneRegex.test(phone)) {
       document.getElementById("phoneError").textContent = "Please enter a 10-digit phone number (e.g. 0821234567).";
@@ -119,14 +119,12 @@
       firstInvalidEl = firstInvalidEl || form.subject;
     }
 
-    // Validate message
     if (message.length < 10) {
       document.getElementById("messageError").textContent = "Please provide more details in your enquiry.";
       isValid = false;
       firstInvalidEl = firstInvalidEl || form.message;
     }
 
-    // Focus first invalid field
     if (!isValid) {
       if (firstInvalidEl) firstInvalidEl.focus();
       return;
@@ -136,7 +134,6 @@
     successMsg.textContent = "Thank you! Your enquiry has been sent successfully.";
     form.reset();
 
-    // Fade-out animation
     successMsg.style.opacity = "1";
     setTimeout(() => {
       successMsg.style.transition = "opacity 1s";
