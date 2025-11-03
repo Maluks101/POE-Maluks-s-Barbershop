@@ -106,6 +106,24 @@ Final Submission : September 28
 <img width="1902" height="862" alt="Screenshot 2025-09-28 225513" src="https://github.com/user-attachments/assets/326c6f2d-40b6-4f94-ba24-bc55203113d7" />
 
 
+## 2 November 2025:
+### Improved in the feedback from POE 2
+- Improved the responsive design , as well as the typography.
+- Improved the HTML formatting.
+- Added more content on all the pages.
+
+### POE 3 Additions 
+- Improved the css.
+- Added an enquiry form.
+- Removed the google form on the contact page.
+- Added Interactive Maps.
+- Added SEO on all the pages.
+- Added JavaScript functionality.
+
+
+
+
+
 
 
 
